@@ -308,8 +308,10 @@ a {
   padding: 0;
 }
 .projects > .item {
+  border-bottom: 1px solid var(--border-color-second);
+  border-left: 1px solid var(--border-color-second);
+  border-right: 1px solid var(--border-color-second);
   width: 370px;
-  border: 1px solid var(--border-color-second);
 }
 .projects > .item:not(:nth-child(3n)) {
   margin-right: 30px;
