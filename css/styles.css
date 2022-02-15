@@ -24,11 +24,17 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+}
 /* Нижняя граница у heder */
-.container.border {
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+/* собирает весь header вместе */
+.container.navigation {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--border-color);
 }
 
 .section {
@@ -61,22 +67,29 @@ a {
 .logo-text {
   color: var(--accent-text-color);
 }
+/* main-nav */
+.main-nav {
+  margin-left: 93px;
+}
 
 /* site-nav */
 .site-nav {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 93px;
+  margin-left: 0;
   padding: 0;
 }
-.site-nav > .item {
+.site-nav .link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  /* border: 2px solid tomato; */
 }
 .site-nav > .item:not(:last-child) {
   margin-right: 50px;
 }
+
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -213,8 +226,12 @@ a {
 .team > .item:not(:last-child) {
   margin-right: 30px;
 }
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team .title {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
@@ -223,7 +240,7 @@ a {
 }
 .team .text {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -267,8 +284,11 @@ a {
 .logo-text-path {
   color: var(--background-white-color);
 }
-.address {
+.footer-address {
   margin-top: 20px;
+}
+.address {
+  margin-top: 0;
   margin-bottom: 0;
   padding: 0;
   font-style: normal;
@@ -298,6 +318,9 @@ a {
   margin-bottom: 50px;
   /* border: 2px solid tomato; */
 }
+.filtr {
+  padding-left: 0;
+}
 .filtr > .item:not(:last-child) {
   margin-right: 8px;
 }
@@ -308,9 +331,6 @@ a {
   padding: 0;
 }
 .projects > .item {
-  border-bottom: 1px solid var(--border-color-second);
-  border-left: 1px solid var(--border-color-second);
-  border-right: 1px solid var(--border-color-second);
   width: 370px;
 }
 .projects > .item:not(:nth-child(3n)) {
@@ -319,10 +339,19 @@ a {
 .projects > .item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
-.projects .title {
-  padding-left: 24px;
 
-  margin-top: 20px;
+.projects-text-name {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-color-second);
+  border-left: 1px solid var(--border-color-second);
+  border-right: 1px solid var(--border-color-second);
+  /* background-color: tomato; */
+}
+
+.projects .title {
+  padding-left: 0;
+
+  margin-top: 0;
   margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -331,9 +360,9 @@ a {
   letter-spacing: 0.06em;
 }
 .projects .text {
-  padding-left: 24px;
+  padding-left: 0;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   color: var(--primery-text-color);
   font-size: 16px;
   line-height: 1.88;

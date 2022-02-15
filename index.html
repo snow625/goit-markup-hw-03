@@ -19,10 +19,10 @@
   </head>
   <body>
     <!--Верхняя линия-->
-    <header>
-      <div class="container border">
+    <header class="header">
+      <div class="container navigation">
         <a href="./index.html" class="logo"><span class="logo-text">Web</span>Studio</a>
-        <nav>
+        <nav class="main-nav">
           <ul class="site-nav list">
             <li class="item"><a href="./index.html" class="link current">Студия</a></li>
             <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
@@ -40,8 +40,10 @@
     <main>
       <!--Герой hero-->
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button hero">Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="button hero">Заказать услугу</button>
+        </div>
       </section>
 
       <!--Преимущества-->
@@ -103,23 +105,31 @@
           <ul class="team list">
             <li class="item">
               <img src="./images/4.jpg" alt="Фото Игоря Демьяненко" width="270" />
-              <h3 class="title">Игорь Демьяненко</h3>
-              <p class="text">Product Designer</p>
+              <div class="team-text">
+                <h3 class="title">Игорь Демьяненко</h3>
+                <p class="text">Product Designer</p>
+              </div>
             </li>
             <li class="item">
               <img src="./images/5.jpg" alt="Фото Ольги Репиной" width="270" />
-              <h3 class="title">Ольга Репина</h3>
-              <p class="text">Frontend Developer</p>
+              <div class="team-text">
+                <h3 class="title">Ольга Репина</h3>
+                <p class="text">Frontend Developer</p>
+              </div>
             </li>
             <li class="item">
               <img src="./images/6.jpg" alt="Фото Николая Тарасова" width="270" />
-              <h3 class="title">Николай Тарасов</h3>
-              <p class="text">Marketing</p>
+              <div class="team-text">
+                <h3 class="title">Николай Тарасов</h3>
+                <p class="text">Marketing</p>
+              </div>
             </li>
             <li class="item">
               <img src="./images/7.jpg" alt="Фото Михаила Ермакова" width="270" />
-              <h3 class="title">Михаил Ермаков</h3>
-              <p class="text">UI Designer</p>
+              <div class="team-text">
+                <h3 class="title">Михаил Ермаков</h3>
+                <p class="text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -131,7 +141,7 @@
         <a href="./index.html" class="logo"
           ><span class="logo-text">Web</span><span class="logo-text-path">Studio</span></a
         >
-        <address>
+        <address class="footer-address">
           <ul class="address list">
             <li class="item"><a href="" class="first">г. Киев, пр-т Леси Украинки, 26</a></li>
             <li class="item">
